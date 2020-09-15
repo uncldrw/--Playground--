@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="#" class="menu-btn" style="font-size: 50px; text-decoration: none;"></a>
+        <div class="sideMenu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Team</li>
+                <li>References</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="content">
+            <header class="header">
+            </header>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector("body, .menu-btn").classList.toggle('nav-open'))
+    </script>
+</body>
+
+</html>
