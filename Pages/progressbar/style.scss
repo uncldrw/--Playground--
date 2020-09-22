@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .progressBar .percent {
+    position: relative;
+  }
+  .progressBar svg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-90deg);
+  }
+  .progressBar svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: rgba(106, 108, 125, 0.6);
+    stroke-width: 30;
+    stroke-linecap: round;
+  }
+  .progressBar svg circle:last-of-type {
+    stroke-dasharray: 625px;
+    stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+    stroke: #3498db;
+  }
